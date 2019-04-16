@@ -48,7 +48,7 @@ namespace GlobalEmail_NET
             RESTRequest += @"&format=json";
 
             // Build the final REST String Query
-            RESTRequest = @"https://globalemail.melissadata.net/V4/WEB/GlobalEmail" + @"/doGlobalEmail?t=" + RESTRequest;
+            RESTRequest = @"https://globalemail.melissadata.net/V3/WEB/GlobalEmail" + @"/doGlobalEmail?t=" + RESTRequest;
 
             // Output the REST Query
             txtRESTRequest.Text = RESTRequest;
@@ -109,7 +109,7 @@ namespace GlobalEmail_NET
         // *************************************************************************************
         private void lnkWiki_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Process.Start("http://wiki.melissadata.com/index.php?title=Global_Email_V4");
+            Process.Start("http://wiki.melissadata.com/index.php?title=Global_Email");
         }
     }
 }
